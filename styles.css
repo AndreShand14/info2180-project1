@@ -1,11 +1,135 @@
 /* Add your CSS to this file */
 body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .container {
+    display: flex;
+    justify-content:left;
+    flex-direction:row;
+    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+ul{
+    display:flex;
+    justify-content: right;
+    color: #6b7280;
+    list-style-type:none;
+
+    
+}
+li{
+    margin-left: 20px;
+    color: #48BB78
+
+}
+h2{
+    display: flex;
+    justify-content:right;
+
+}
+a{
+    color: #6b7280;
+    text-decoration: none;
+
+}
+.container a:hover{
+    color:#5A67D8;
+
+}
+.overview-hero{
+    text-align:left;
+    background-color: #E2E8F0;
+    padding: 50px;
+
+
+}
+.overview-hero-image{
+    width: 250px;
+    height: 200px;
+    background-image: url('yoga.png');
+    background-size:contain;
+    background-color:#E2E8F0 ;
+    display: flex;
+    justify-content:left;
+
+
+}
+.overview-hero-text{
+    flex:1;
+    padding-left: 100px;
+
+
+}.learn-about h2{
+    color:#48BB78;
+    font-size: 24px;
+    justify-content: left;
+
+
+
+}
+
+    
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+}
+
+.cards {
+    display: flex;
+    justify-content:center;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card:nth-child(1) img {
+
+    width: 200px;
+    height: 100px;
+    background-image: url('ai.png'); /* Adjust image URLs */
+    background-size:contain;
+    border:#FFF;
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+}
+.card:nth-child(2) img {
+    width: 200px;
+    height: 100px;
+    background-image: url('fitness.png'); /* Adjust image URLs */
+    background-size: cover;
+    border: none;
+    margin:none;
+    padding: 10px;
+    text-align: start;
+}
+.card:nth-child(3) img {
+    width: 200px;
+    height: 100px;
+
+    background-image: url('healthy.pg.png'); /* Adjust image URLs */
+    background-size: cover;
+    border: none;
+    margin: none;
+    padding: 10px;
+    text-align: start;
+}
+.container{
+    
 }
