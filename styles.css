@@ -14,6 +14,11 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+.overview-hero p {
+    display: flex;
+    justify-content: space-between;
+}
 ul{
     display:flex;
     justify-content: right;
@@ -29,7 +34,7 @@ li{
 }
 h2{
     display: flex;
-    justify-content:right;
+    justify-content:flex-end;
 
 }
 a{
@@ -42,7 +47,6 @@ a{
 
 }
 .overview-hero{
-    text-align:left;
     background-color: #E2E8F0;
     padding: 50px;
 
@@ -55,13 +59,14 @@ a{
     background-size:contain;
     background-color:#E2E8F0 ;
     display: flex;
-    justify-content:left;
+    float: left;
 
 
 }
 .overview-hero-text{
-    flex:1;
     padding-left: 100px;
+    float: right;
+
 
 
 }.learn-about h2{
@@ -79,7 +84,7 @@ a{
 .container {
     display: flex;
     flex-direction: column;
-    margin:  auto;
+    margin:  0 auto;
 }
 
 .cards {
@@ -97,12 +102,14 @@ a{
     padding: 10px;
     text-align: center;
 }
-
+.card-body h3{
+    color: #48BB78;
+}
 .card:nth-child(1) img {
 
     width: 200px;
     height: 100px;
-    background-image: url('ai.png'); /* Adjust image URLs */
+    background-image: url('ai.png');
     background-size:contain;
     border:#FFF;
     margin: 10px;
@@ -112,7 +119,7 @@ a{
 .card:nth-child(2) img {
     width: 200px;
     height: 100px;
-    background-image: url('fitness.png'); /* Adjust image URLs */
+    background-image: url('fitness.png');
     background-size: cover;
     border: none;
     margin:none;
@@ -123,13 +130,102 @@ a{
     width: 200px;
     height: 100px;
 
-    background-image: url('healthy.pg.png'); /* Adjust image URLs */
+    background-image: url('healthy.pg.png'); 
     background-size: cover;
     border: none;
     margin: none;
     padding: 10px;
     text-align: start;
 }
-.container{
+.testing{
+    text-align:left;
+    background-color:#4A5568;
+    padding: 50px;
+
+
+}
+.testing h2{
+    display:flex;
+    justify-content: left;
+    color: #fff;
+   
+
     
+
+}
+.testing p{
+    color: #fff;
+    justify-content: flex-start;
+    float: right;
+    margin-left:15px ;
+}
+
+    
+.btn{
+    background: #48BB78;
+    width: 100px;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-left: 10px;
+    padding: 3px;
+    
+}
+.stories h2{
+    display: flex;
+    justify-content: left;
+}
+
+   
+
+
+
+
+
+
+
+
+
+.stories img:nth-child(1){
+    float: left;
+    background-image: url('man.png');
+    height: 125px;
+    width: 150px;
+
+
+
+
+}
+.stories img:nth-child(2){
+    float: left;
+    background-image: url('fitness.png');
+    height: 125px;
+    width: 150px;
+
+
+
+
+}
+.newsletter{
+    text-align: center;
+    background-color:#48BB78 ;
+    padding: 100px;
+
+
+}
+.newsletter p{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+
+}
+.newsletter h3{
+    color: #fff;
+
+}
+.form-group input{
+    float:inline-start;
+}
+.form-group button{
+    float:inline-end;
 }
