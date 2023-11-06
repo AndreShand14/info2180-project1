@@ -18,6 +18,7 @@ body {
 .overview-hero p {
     display: flex;
     justify-content: space-between;
+    
 }
 ul{
     display:flex;
@@ -224,8 +225,8 @@ a{
 
 }
 .form-group input{
-    float:inline-start;
+    float:right;
 }
 .form-group button{
-    float:inline-end;
+    float:right;
 }
